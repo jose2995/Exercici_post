@@ -31,15 +31,15 @@
     time: string,
   }
 
-  const messages: Ref<Array<message>> = ref([]);
+  const messages:Ref<Array<message>> = ref([]);
 
   const printEmoticon = (emoticon:string)=>{
     const newMessage = {emoji:emoticon, text: "",time:getCurrentTime()}
-    messages.value.push(newMessage)
+    messages.value.unshift(newMessage)
   }
 
   const printText = (text:string)=>{
-    const lastMessage = messages.value[messages.value.length - 1];
+    const lastMessage = messages.value[0];
     if (lastMessage) {
       lastMessage.text = text;
     }
