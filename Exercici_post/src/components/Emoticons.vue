@@ -1,19 +1,19 @@
 <template>
     <div class="emoticons-container">
         <div class="select" @click="seleccionarEmoticon('frown')" :class="{ selected: emoticonSeleccionado === 'frown' }">
-            <font-awesome-icon :icon="['fas', 'fa-face-frown']" />
+            <font-awesome-icon :icon="['fas', 'fa-face-frown']" size="2x"/>
         </div>
         <div class="select" @click="seleccionarEmoticon('smile')" :class="{ selected: emoticonSeleccionado === 'smile' }">
-            <font-awesome-icon :icon="['fas', 'fa-face-smile']" />
+            <font-awesome-icon :icon="['fas', 'fa-face-smile']" size="2x"/>
         </div>
         <div class="select" @click="seleccionarEmoticon('angry')" :class="{ selected: emoticonSeleccionado === 'angry' }">
-            <font-awesome-icon :icon="['fas', 'face-angry']" />
+            <font-awesome-icon :icon="['fas', 'face-angry']" size="2x"/>
         </div>
         <div class="select" @click="seleccionarEmoticon('surprise')" :class="{ selected: emoticonSeleccionado === 'surprise' }">
-            <font-awesome-icon :icon="['fas', 'face-surprise']" />
+            <font-awesome-icon :icon="['fas', 'face-surprise']" size="2x"/>
         </div>
         <div class="select" @click="seleccionarEmoticon('sad-cry')" :class="{ selected: emoticonSeleccionado === 'sad-cry' }">
-            <font-awesome-icon :icon="['fas', 'face-sad-cry']" />
+            <font-awesome-icon :icon="['fas', 'face-sad-cry']" size="2x"/>
         </div>
     </div>
 </template>
@@ -45,4 +45,6 @@
         cursor: pointer;
         margin-right: 10px;
     }
+
+    
 </style>

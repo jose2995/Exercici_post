@@ -86,7 +86,7 @@
   }
 
   .emoji-icon {
-    font-size: 24px;
+    font-size: 50px;
   }
 
   .post {
